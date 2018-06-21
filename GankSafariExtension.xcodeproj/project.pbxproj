@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0457EED020DB6E7B00C4FC18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0457EECF20DB6E7B00C4FC18 /* Cocoa.framework */; };
+		0457EED320DB6E7B00C4FC18 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EED220DB6E7B00C4FC18 /* SafariExtensionHandler.swift */; };
+		0457EED520DB6E7B00C4FC18 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EED420DB6E7B00C4FC18 /* SafariExtensionViewController.swift */; };
+		0457EED820DB6E7B00C4FC18 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457EED620DB6E7B00C4FC18 /* SafariExtensionViewController.xib */; };
+		0457EEDB20DB6E7B00C4FC18 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0457EEDA20DB6E7B00C4FC18 /* script.js */; };
+		0457EEDD20DB6E7B00C4FC18 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0457EEDC20DB6E7B00C4FC18 /* ToolbarItemIcon.pdf */; };
+		0457EEE120DB6E7B00C4FC18 /* GankSE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0457EECD20DB6E7B00C4FC18 /* GankSE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04C40B9420D8B7E5006053F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C40B9320D8B7E5006053F0 /* AppDelegate.swift */; };
+		04C40B9620D8B7E5006053F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C40B9520D8B7E5006053F0 /* ViewController.swift */; };
+		04C40B9820D8B7E6006053F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C40B9720D8B7E6006053F0 /* Assets.xcassets */; };
+		04C40B9B20D8B7E6006053F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C40B9920D8B7E6006053F0 /* Main.storyboard */; };
+		04C40BA720D8B7E6006053F0 /* GankSafariExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C40BA620D8B7E6006053F0 /* GankSafariExtensionTests.swift */; };
+		04C40BB220D8B7E6006053F0 /* GankSafariExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C40BB120D8B7E6006053F0 /* GankSafariExtensionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0457EEDF20DB6E7B00C4FC18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C40B8820D8B7E5006053F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0457EECC20DB6E7B00C4FC18;
+			remoteInfo = GankSE;
+		};
+		04C40BA320D8B7E6006053F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C40B8820D8B7E5006053F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C40B8F20D8B7E5006053F0;
+			remoteInfo = GankSafariExtension;
+		};
+		04C40BAE20D8B7E6006053F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C40B8820D8B7E5006053F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C40B8F20D8B7E5006053F0;
+			remoteInfo = GankSafariExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0457EEE520DB6E7B00C4FC18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0457EEE120DB6E7B00C4FC18 /* GankSE.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0457EECD20DB6E7B00C4FC18 /* GankSE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GankSE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0457EECF20DB6E7B00C4FC18 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0457EED220DB6E7B00C4FC18 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		0457EED420DB6E7B00C4FC18 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		0457EED720DB6E7B00C4FC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		0457EED920DB6E7B00C4FC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0457EEDA20DB6E7B00C4FC18 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		0457EEDC20DB6E7B00C4FC18 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		0457EEDE20DB6E7B00C4FC18 /* GankSE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GankSE.entitlements; sourceTree = "<group>"; };
+		04C40B9020D8B7E5006053F0 /* GankSafariExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankSafariExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C40B9320D8B7E5006053F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04C40B9520D8B7E5006053F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04C40B9720D8B7E6006053F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C40B9A20D8B7E6006053F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C40B9C20D8B7E6006053F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C40B9D20D8B7E6006053F0 /* GankSafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GankSafariExtension.entitlements; sourceTree = "<group>"; };
+		04C40BA220D8B7E6006053F0 /* GankSafariExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GankSafariExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C40BA620D8B7E6006053F0 /* GankSafariExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GankSafariExtensionTests.swift; sourceTree = "<group>"; };
+		04C40BA820D8B7E6006053F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C40BAD20D8B7E6006053F0 /* GankSafariExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GankSafariExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C40BB120D8B7E6006053F0 /* GankSafariExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GankSafariExtensionUITests.swift; sourceTree = "<group>"; };
+		04C40BB320D8B7E6006053F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0457EECA20DB6E7B00C4FC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0457EED020DB6E7B00C4FC18 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40B8D20D8B7E5006053F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40B9F20D8B7E6006053F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40BAA20D8B7E6006053F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0457EECE20DB6E7B00C4FC18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0457EECF20DB6E7B00C4FC18 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0457EED120DB6E7B00C4FC18 /* GankSE */ = {
+			isa = PBXGroup;
+			children = (
+				0457EED220DB6E7B00C4FC18 /* SafariExtensionHandler.swift */,
+				0457EED420DB6E7B00C4FC18 /* SafariExtensionViewController.swift */,
+				0457EED620DB6E7B00C4FC18 /* SafariExtensionViewController.xib */,
+				0457EED920DB6E7B00C4FC18 /* Info.plist */,
+				0457EEDA20DB6E7B00C4FC18 /* script.js */,
+				0457EEDC20DB6E7B00C4FC18 /* ToolbarItemIcon.pdf */,
+				0457EEDE20DB6E7B00C4FC18 /* GankSE.entitlements */,
+			);
+			path = GankSE;
+			sourceTree = "<group>";
+		};
+		04C40B8720D8B7E5006053F0 = {
+			isa = PBXGroup;
+			children = (
+				04C40B9220D8B7E5006053F0 /* GankSafariExtension */,
+				04C40BA520D8B7E6006053F0 /* GankSafariExtensionTests */,
+				04C40BB020D8B7E6006053F0 /* GankSafariExtensionUITests */,
+				0457EED120DB6E7B00C4FC18 /* GankSE */,
+				0457EECE20DB6E7B00C4FC18 /* Frameworks */,
+				04C40B9120D8B7E5006053F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04C40B9120D8B7E5006053F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C40B9020D8B7E5006053F0 /* GankSafariExtension.app */,
+				04C40BA220D8B7E6006053F0 /* GankSafariExtensionTests.xctest */,
+				04C40BAD20D8B7E6006053F0 /* GankSafariExtensionUITests.xctest */,
+				0457EECD20DB6E7B00C4FC18 /* GankSE.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C40B9220D8B7E5006053F0 /* GankSafariExtension */ = {
+			isa = PBXGroup;
+			children = (
+				04C40B9320D8B7E5006053F0 /* AppDelegate.swift */,
+				04C40B9520D8B7E5006053F0 /* ViewController.swift */,
+				04C40B9720D8B7E6006053F0 /* Assets.xcassets */,
+				04C40B9920D8B7E6006053F0 /* Main.storyboard */,
+				04C40B9C20D8B7E6006053F0 /* Info.plist */,
+				04C40B9D20D8B7E6006053F0 /* GankSafariExtension.entitlements */,
+			);
+			path = GankSafariExtension;
+			sourceTree = "<group>";
+		};
+		04C40BA520D8B7E6006053F0 /* GankSafariExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				04C40BA620D8B7E6006053F0 /* GankSafariExtensionTests.swift */,
+				04C40BA820D8B7E6006053F0 /* Info.plist */,
+			);
+			path = GankSafariExtensionTests;
+			sourceTree = "<group>";
+		};
+		04C40BB020D8B7E6006053F0 /* GankSafariExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04C40BB120D8B7E6006053F0 /* GankSafariExtensionUITests.swift */,
+				04C40BB320D8B7E6006053F0 /* Info.plist */,
+			);
+			path = GankSafariExtensionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0457EECC20DB6E7B00C4FC18 /* GankSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0457EEE420DB6E7B00C4FC18 /* Build configuration list for PBXNativeTarget "GankSE" */;
+			buildPhases = (
+				0457EEC920DB6E7B00C4FC18 /* Sources */,
+				0457EECA20DB6E7B00C4FC18 /* Frameworks */,
+				0457EECB20DB6E7B00C4FC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GankSE;
+			productName = GankSE;
+			productReference = 0457EECD20DB6E7B00C4FC18 /* GankSE.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		04C40B8F20D8B7E5006053F0 /* GankSafariExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C40BB620D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtension" */;
+			buildPhases = (
+				04C40B8C20D8B7E5006053F0 /* Sources */,
+				04C40B8D20D8B7E5006053F0 /* Frameworks */,
+				04C40B8E20D8B7E5006053F0 /* Resources */,
+				0457EEE520DB6E7B00C4FC18 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0457EEE020DB6E7B00C4FC18 /* PBXTargetDependency */,
+			);
+			name = GankSafariExtension;
+			productName = GankSafariExtension;
+			productReference = 04C40B9020D8B7E5006053F0 /* GankSafariExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04C40BA120D8B7E6006053F0 /* GankSafariExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C40BB920D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtensionTests" */;
+			buildPhases = (
+				04C40B9E20D8B7E6006053F0 /* Sources */,
+				04C40B9F20D8B7E6006053F0 /* Frameworks */,
+				04C40BA020D8B7E6006053F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C40BA420D8B7E6006053F0 /* PBXTargetDependency */,
+			);
+			name = GankSafariExtensionTests;
+			productName = GankSafariExtensionTests;
+			productReference = 04C40BA220D8B7E6006053F0 /* GankSafariExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04C40BAC20D8B7E6006053F0 /* GankSafariExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C40BBC20D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtensionUITests" */;
+			buildPhases = (
+				04C40BA920D8B7E6006053F0 /* Sources */,
+				04C40BAA20D8B7E6006053F0 /* Frameworks */,
+				04C40BAB20D8B7E6006053F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C40BAF20D8B7E6006053F0 /* PBXTargetDependency */,
+			);
+			name = GankSafariExtensionUITests;
+			productName = GankSafariExtensionUITests;
+			productReference = 04C40BAD20D8B7E6006053F0 /* GankSafariExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C40B8820D8B7E5006053F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = ikangtai;
+				TargetAttributes = {
+					0457EECC20DB6E7B00C4FC18 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					04C40B8F20D8B7E5006053F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					04C40BA120D8B7E6006053F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 04C40B8F20D8B7E5006053F0;
+					};
+					04C40BAC20D8B7E6006053F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 04C40B8F20D8B7E5006053F0;
+					};
+				};
+			};
+			buildConfigurationList = 04C40B8B20D8B7E5006053F0 /* Build configuration list for PBXProject "GankSafariExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04C40B8720D8B7E5006053F0;
+			productRefGroup = 04C40B9120D8B7E5006053F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C40B8F20D8B7E5006053F0 /* GankSafariExtension */,
+				04C40BA120D8B7E6006053F0 /* GankSafariExtensionTests */,
+				04C40BAC20D8B7E6006053F0 /* GankSafariExtensionUITests */,
+				0457EECC20DB6E7B00C4FC18 /* GankSE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0457EECB20DB6E7B00C4FC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0457EEDD20DB6E7B00C4FC18 /* ToolbarItemIcon.pdf in Resources */,
+				0457EED820DB6E7B00C4FC18 /* SafariExtensionViewController.xib in Resources */,
+				0457EEDB20DB6E7B00C4FC18 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40B8E20D8B7E5006053F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C40B9820D8B7E6006053F0 /* Assets.xcassets in Resources */,
+				04C40B9B20D8B7E6006053F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40BA020D8B7E6006053F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40BAB20D8B7E6006053F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0457EEC920DB6E7B00C4FC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0457EED520DB6E7B00C4FC18 /* SafariExtensionViewController.swift in Sources */,
+				0457EED320DB6E7B00C4FC18 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40B8C20D8B7E5006053F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C40B9620D8B7E5006053F0 /* ViewController.swift in Sources */,
+				04C40B9420D8B7E5006053F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40B9E20D8B7E6006053F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C40BA720D8B7E6006053F0 /* GankSafariExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C40BA920D8B7E6006053F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C40BB220D8B7E6006053F0 /* GankSafariExtensionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0457EEE020DB6E7B00C4FC18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0457EECC20DB6E7B00C4FC18 /* GankSE */;
+			targetProxy = 0457EEDF20DB6E7B00C4FC18 /* PBXContainerItemProxy */;
+		};
+		04C40BA420D8B7E6006053F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C40B8F20D8B7E5006053F0 /* GankSafariExtension */;
+			targetProxy = 04C40BA320D8B7E6006053F0 /* PBXContainerItemProxy */;
+		};
+		04C40BAF20D8B7E6006053F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C40B8F20D8B7E5006053F0 /* GankSafariExtension */;
+			targetProxy = 04C40BAE20D8B7E6006053F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0457EED620DB6E7B00C4FC18 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0457EED720DB6E7B00C4FC18 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+		04C40B9920D8B7E6006053F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C40B9A20D8B7E6006053F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0457EEE220DB6E7B00C4FC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GankSE/GankSE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtension.GankSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		0457EEE320DB6E7B00C4FC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GankSE/GankSE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtension.GankSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		04C40BB420D8B7E6006053F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04C40BB520D8B7E6006053F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		04C40BB720D8B7E6006053F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GankSafariExtension/GankSafariExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		04C40BB820D8B7E6006053F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GankSafariExtension/GankSafariExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		04C40BBA20D8B7E6006053F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GankSafariExtension.app/Contents/MacOS/GankSafariExtension";
+			};
+			name = Debug;
+		};
+		04C40BBB20D8B7E6006053F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GankSafariExtension.app/Contents/MacOS/GankSafariExtension";
+			};
+			name = Release;
+		};
+		04C40BBD20D8B7E6006053F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GankSafariExtension;
+			};
+			name = Debug;
+		};
+		04C40BBE20D8B7E6006053F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = YL5HCBTF4V;
+				INFOPLIST_FILE = GankSafariExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikangtai.GankSafariExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = GankSafariExtension;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0457EEE420DB6E7B00C4FC18 /* Build configuration list for PBXNativeTarget "GankSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0457EEE220DB6E7B00C4FC18 /* Debug */,
+				0457EEE320DB6E7B00C4FC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C40B8B20D8B7E5006053F0 /* Build configuration list for PBXProject "GankSafariExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C40BB420D8B7E6006053F0 /* Debug */,
+				04C40BB520D8B7E6006053F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C40BB620D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C40BB720D8B7E6006053F0 /* Debug */,
+				04C40BB820D8B7E6006053F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C40BB920D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C40BBA20D8B7E6006053F0 /* Debug */,
+				04C40BBB20D8B7E6006053F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C40BBC20D8B7E6006053F0 /* Build configuration list for PBXNativeTarget "GankSafariExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C40BBD20D8B7E6006053F0 /* Debug */,
+				04C40BBE20D8B7E6006053F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C40B8820D8B7E5006053F0 /* Project object */;
+}
